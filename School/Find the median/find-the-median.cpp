@@ -11,12 +11,15 @@ public:
 		{
 		    // Code here.
 		    int ans;
+		    //it gets the size of the vector array
 		    int size=v.size();
+		    //sort function arranges the elements in ascending order 
 		    sort(v.begin(),v.end());
-		    
+		    //if the number of items are even then median will be the average of middle terms
 		    if(size%2==0){
 		        ans=(v[size/2 -1]+v[size/2])/2;
 		    }
+		   //if number of elements are odd then the middle element is the median
 		    else{
 		        ans=v[size/2];
 		    }
