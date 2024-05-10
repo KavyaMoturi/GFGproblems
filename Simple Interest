@@ -1,0 +1,32 @@
+//{ Driver Code Starts
+// Initial Template for C++
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// } Driver Code Ends
+// User function Template for C++
+
+class Solution {
+  public:
+    double simpleInterest(float P, float R, float T) {
+        // simple interest =ptr/100
+        // to round off to two digits,we multiply and divide with 1000
+        return round(P*T*R*1000/100)/1000;
+    }
+};
+
+//{ Driver Code Starts.
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int P, R, T;
+        cin >> P >> R >> T;
+        Solution ob;
+        cout << fixed << setprecision(2);
+        cout << ob.simpleInterest(P, R, T) << "\n";
+    }
+}
+
+// } Driver Code Ends
